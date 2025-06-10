@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KPR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <h1>HTML Head tag</h1>
+  <!-- <a href="about.html" target="_self">About page</a> <br>
+  <a href="table.html" target="_self">Table page</a><br>
+  <a href="form.html" target="_self">Form page</a> -->
+
+  <input type="text" id="name">
+  <button onclick=showName()>Click</button>
+  <h1 id="result"></h1>
+  <script>
+    function showName(){
+      const name=document.getElementById('name').value
+      document.getElementById('result').innerText=`Hello ${name}`
+    }
+
+  </script>
+
+  
+  
 </body>
 </html>
